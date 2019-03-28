@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mappings>
+    <map class="dto.Staff">
+        <header>
+            <name></name>
+            <index></index>
+        </header>
+        <row>
+            <cell index="0"     min-lenght="1"  max-length="10"     required="true"     dataType="String"     targetField="staffNumber"/>
+            <cell index="1"     min-lenght="1"  max-length="50"     required="true"     dataType="String"     targetField="firstName"/>
+            <cell index="2"     min-lenght="1"  max-length="50"     required="true"     dataType="String"     targetField="lastName"/>
+            <cell index="3"     min-lenght="1"  max-length="1"      required="true"     dataType="String"     targetField="gender"/>
+            <cell index="4"     min-lenght="1"  max-length="-1"     required="false"    dataType="String"     targetField="nationality"/>
+            <cell index="5"     min-lenght="1"  max-length="-1"     required="true"     dataType="String"     targetField="dob"/>
+            <cell index="6"     min-lenght="1"  max-length="50"     required="true"     dataType="String"     targetField="userName"/>
+            <cell index="7"     min-lenght="1"  max-length="50"     required="false"    dataType="String"     targetField="designation"/>
+            <cell index="8"    min-lenght="1"  max-length="100"    required="false"    dataType="String"     targetField="email"/>
+            <cell index="9"     min-lenght="1"  max-length="20"     required="false"    dataType="String"     targetField="phone"/>
+            <cell index="10"    min-lenght="1"  max-length="150"    required="false"    dataType="String"     targetField="address"/>
+            <cell index="11"    min-lenght="1"  max-length="50"     required="false"    dataType="String"     targetField="organisation"/>
+            <cell index="12"    min-lenght="1"  max-length="99"     required="true"     dataType="Integer"    targetField="costCenter"/>
+            <cell index="13"    min-lenght="1"  max-length="2"     required="false"    dataType="String"     targetField="contractCode"/>
+            <cell index="14"    min-lenght="1"  max-length="1"      required="false"    dataType="String"     targetField="shiftWorkerIndicator"/>
+            <cell index="15"    min-lenght="1"  max-length="-1"     required="true"     dataType="String"     targetField="doj"/>
+            <cell index="16"    min-lenght="1"  max-length="50"     required="false"    dataType="String"     targetField="certifiedServices"/>
+            <cell index="17"    min-lenght="1"  max-length="20"     required="false"    dataType="String"     targetField="emergencyPh"/>
+            <cell index="18"    min-lenght="1"  max-length="5"      required="true"     dataType="Boolean"    targetField="isActive"/>
+        </row>
+    </map>
+</mappings>

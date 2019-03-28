@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+   <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+      <xs:element name="mappings">
+               <xs:complexType>
+                     <xs:sequence>
+                           <xs:element name="map">
+                                 <xs:complexType>
+                                       <xs:sequence>
+                                             <xs:element name="header">
+                                                   <xs:complexType>
+                                                         <xs:sequence>
+                                                               <xs:element name="name"></xs:element>
+                                                               <xs:element name="index"></xs:element>
+                                                         </xs:sequence>
+                                                   </xs:complexType>
+                                             </xs:element>
+                                             <xs:element name="row">
+                                                   <xs:complexType>
+                                                         <xs:sequence>
+                                                               <xs:element name="cell" maxOccurs="unbounded">
+                                                                     <xs:complexType>
+                                                                           <xs:attribute name="index" type="xs:int"></xs:attribute>
+                                                                           <xs:attribute name="dataType" type="xs:string"></xs:attribute>
+                                                                           <xs:attribute name="restirctionType" type="xs:string"></xs:attribute>
+                                                                           <xs:attribute name="min-lenght" type="xs:int"></xs:attribute>
+                                                                           <xs:attribute name="max-length" type="xs:int"></xs:attribute>
+                                                                           <xs:attribute name="required" type="xs:string"></xs:attribute>
+                                                                           <xs:attribute name="targetField" type="xs:string"></xs:attribute>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                         </xs:sequence>
+                                                   </xs:complexType>
+                                             </xs:element>
+                                       </xs:sequence>
+                                       <xs:attribute name="class" type="xs:string"></xs:attribute>
+                                 </xs:complexType>
+                           </xs:element>
+                     </xs:sequence>
+               </xs:complexType>
+         </xs:element>
+   </xs:schema>
